@@ -1,30 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Geof Bard</title>
-<style>
-  body { font-family: sans-serif; text-align: center; padding: 50px; }
-  h1 { font-size: 3em; }
-  p { font-size: 1.2em; }
-  a { color: #1a73e8; text-decoration: none; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geof Bard | Author & Editor</title>
+  <meta name="description" content="The official website of Geof Bard, author of fiction and non-fiction exploring espionage, society, and the Anthropocene.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f1;
+      color: #034c20;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #034c20;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 6rem;
+      background: linear-gradient(135deg, #b8b8ba 0%, #e2e2e2 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      background: url("http://geofbard.neocities.org/GeofBardisWriting.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.15;
+      position: absolute;
+      inset: 0;
+    }
+
+    header h1 {
+      font-family: 'Alata', sans-serif;
+      font-size: 3rem;
+      margin: 0;
+      position: relative;
+    }
+
+    header h2 {
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin: 0.5rem 0 1rem;
+      position: relative;
+    }
+
+    .hero-tagline {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .hero-button {
+      display: inline-block;
+      background-color: #034c20;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: -4rem auto 2rem;
+      padding: 0 1rem;
+      position: relative;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2.section-title {
+      font-family: 'Alata', sans-serif;
+      font-size: 2rem;
+      border-bottom: 2px solid #034c20;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .book-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .book-item {
+      width: 170px;
+      text-align: center;
+    }
+
+    .book-item img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+      background-color: #e6e6e6;
+      transition: transform 0.2s;
+    }
+
+    .book-item img:hover {
+      transform: scale(1.04);
+      border-color: #034c20;
+    }
+
+    .book-caption {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .inline-advocacy-link {
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
+    .advocacy-card {
+      background: linear-gradient(135deg, #e1e3df 0%, #d6d8d3 100%);
+      border: 1px solid #b5b7b2;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      background-color: #b8b8ba;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width:600px){
+      header h1 { font-size: 2.2rem; }
+      header h2 { font-size: 1.2rem; }
+      .book-item { width: 140px; }
+      .book-item img { height: 220px; }
+    }
+  </style>
 </head>
+
 <body>
+
+<header>
   <h1>Geof Bard</h1>
-  <p>Author | Musician</p>
-  <p>Under construction.</p>
-  <p>Check out my books</p>
-  <ul>
-    <li><a href="https://www.amazon.com/dp/B0CL974SQH" target="_blank">The Anthropocene Sagas</a></li>
-    <li><a href="https://www.amazon.com/stores/Geof-Bard/author/B0C4J5N4K" target="_blank">Non-fiction titles</a></li>
-    <li> <a href="https://www.amazon.com/Service-Dogs-America-Issues-Training/dp/B0F514SMF9" target="_blank">The Service Dog Book!</a></li>
-<P>
+  <h2>Author & Editor</h2>
+  <p class="hero-tagline">
+    Fiction and non-fiction at the intersection of espionage, society, and the Anthropocene.
+  </p>
+  <a href="#fiction" class="hero-button">Explore My Books</a>
+</header>
 
-    <li><a href="https://www.paypal.com/ncp/payment/CFAFFZRQTA4VY" target="_blank">Contributions</a></li>
+<main>
 
+  <!-- Fiction -->
+  <section id="fiction">
+    <h2 class="section-title">The Anthropocene Sagas</h2>
+    <p>
+      A cycle of novels exploring surveillance, geopolitics, climate crisis, and human resilience.
+    </p>
 
-  </ul>
+    <div class="book-grid">
+      <div class="book-item">
+        <a href="https://www.amazon.com/gp/product/B0CL9797WF">
+          <img src="https://bastillepress.org/imgneo/GFS_GB.jpg" alt="Ghost of the Forgotten Snows">
+        </a>
+        <p class="book-caption"><strong>Ghost of the Forgotten Snows</strong></p>
+      </div>
+
+      <div class="book-item">
+        <a href="https://www.amazon.com/Terminal-Warfare-Scientist-Lover-Anthropocene-ebook/dp/B0CKQGTBCC">
+          <img src="https://bastillepress.org/imgneo/terminalwarfaregeofbard.jpg" alt="Terminal Warfare: Lady, Scientist, Lover, Spy">
+        </a>
+        <p class="book-caption"><strong>Terminal Warfare: Lady, Scientist, Lover, Spy</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Non-Fiction -->
+  <section>
+    <h2 class="section-title">Non-Fiction</h2>
+
+    <div class="book-grid">
+
+      <div class="book-item">
+        <a href="https://www.amazon.com/Street-Performers-Buskers-Geof-Bard/dp/B0C47LFXSJ">
+          <img src="https://bastillepress.org/imgneo/StreetPerformersTBF.jpg" alt="Street Performers: Buskers and Busking">
+        </a>
+        <p class="book-caption"><strong>Street Performers: Buskers and Busking</strong></p>
+      </div>
+
+      <div class="book-item">
+        <a href="https://www.amazon.com/Service-Dogs-America-Training-Empowerment/dp/B0D2B6DMXN">
+          <img src="https://bastillepress.org/imgneo/ServiceDogsinAmericaJDEverhard.jpg" alt="Service Dogs in America: Legal Issues">
+        </a>
+        <p class="book-caption">
+          <strong>Service Dogs in America: Legal Issues</strong><br>
+          <a href="#lilly" class="inline-advocacy-link">
+            Meet Lilly, the canine ambassador behind the book →
+          </a>
+        </p>
+      </div>
+
+      <div class="book-item">
+        <a href="https://www.amazon.com/Ukraine-Solidarity-Authoritarianism-Resistance-Archives/dp/B0CW3QCSC3">
+          <img src="https://bastillepress.org/imgneo/PeaceJDE.jpg" alt="Peace in Ukraine: Victory Over the New Fascism">
+        </a>
+        <p class="book-caption"><strong>Peace in Ukraine</strong></p>
+      </div>
+
+      <div class="book-item">
+        <a href="https://www.amazon.com/gp/product/B0CB3TS3Y8">
+          <img src="https://bastillepress.org/imgneo/StandwithUkraine.jpg" alt="Stand with Ukraine: Debunking the Propaganda">
+        </a>
+        <p class="book-caption"><strong>Stand with Ukraine</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Advocacy -->
+  <section id="lilly">
+    <h2 class="section-title">Community & Advocacy</h2>
+
+    <div class="advocacy-card">
+      <div style="text-align:center;">
+        <img src="https://bastillepress.org/imgneo/happydog.png"
+             alt="Lilly — Wolfgang Amadeus Lillehammer"
+             style="max-width:240px; border-radius:10px; margin-bottom:1rem;">
+      </div>
+
+      <p>
+        <strong>Lilly — Wolfgang Amadeus Lillehammer</strong> — is 15 years old and still going strong.
+        She has served as a canine ambassador, appearing publicly to support animal-code reform,
+        offering comfort as a de facto therapy dog, and starring in
+        <em>Service Dogs in America: Legal Issues</em>.
+      </p>
+
+      <p>
+        As Lilly enters her golden years, readers and friends have asked how they can help support her care.
+      </p>
+
+      <p style="text-align:center;">
+        <a href="https://www.gofundme.com/f/help-lilly-the-therapy-dog-in-her-golden-years"
+           target="_blank"
+           class="hero-button">
+          Help Lilly in Her Golden Years
+        </a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    Credits: Alata font by Spyros Zevelakis & Eben Sorkin. Visual tools include Midjourney and DALL·E.
+    Layout and production with LibreOffice and Canva.
+  </p>
+</footer>
+
 </body>
 </html>
+Where you are now
+  
